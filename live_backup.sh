@@ -3,6 +3,7 @@
 # Set variables
 DIRECTORY=/home/$(whoami)/.minecraftbackups/  # Directory to backup to
 VERSION=1.8.5  # Minecraft version number
+MEM=2046M  # Amount of memory for server to use
 
 # Check that backup location exists
 if [ ! -d "$DIRECTORY" ]; then
@@ -22,7 +23,7 @@ to_screen "say 60s to scheduled restart."
 sleep 30s
 to_screen "say 30s to scheduled restart."
 sleep 20s
-to_screen "say 10"
+to_screen "say 10s to scheduled restart."
 sleep 1s
 to_screen "say 9"
 sleep 1s
@@ -58,4 +59,4 @@ else
 fi
 
 # Start server back up
-to_screen "java -Xmx2048M -Xms2048M -jar minecraft_server.$VERSION.jar nogui"
+to_screen "java -Xmx$MEM -Xms$MEM -jar minecraft_server.$VERSION.jar nogui"
