@@ -1,7 +1,7 @@
 #Minecraft Server Administration
 This is a small collection of scripts and tools I used to manage a small minecraft server.
 
-Learn more about server at: myrkviðr.com
+Learn more about server at: [myrkviðr.com](http://myrkviðr.com/)
 
 ###Backup
 This bash script can be used to backup a server that is not currently running. The default backup location is   `~/.minecraftbackups` though this can be changed in the variables. To run script:
