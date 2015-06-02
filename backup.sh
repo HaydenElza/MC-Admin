@@ -6,7 +6,7 @@ if [ ! -d "$DIRECTORY" ]; then
 	mkdir $DIRECTORY
 fi
 
-OF=/home/$(whoami)/.minecraftbackups/$(date +%F).tar.gz
+OF=$DIRECTORY$(date +%F).tar.gz
 
 echo "Backing up the .minecraft folder to $OF" 
 
