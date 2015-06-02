@@ -3,7 +3,7 @@
 DIRECTORY=/home/$(whoami)/.minecraftbackups/
 
 if [ ! -d "$DIRECTORY" ]; then
-	echo mkdir $DIRECTORY
+	mkdir $DIRECTORY
 fi
 
 OF=/home/$(whoami)/.minecraftbackups/$(date +%F).tar.gz
