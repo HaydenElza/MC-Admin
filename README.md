@@ -1,2 +1,2 @@
-# MC-Admin
-Minecraft server administration scripts and tools.
+# Server Webpage
+Simple site to desribe server and project.
