@@ -1,0 +1,28 @@
+/give @p minecraft:written_book 1 0 {
+title:"Warp",
+author:"",
+pages:[
+	"{text:\"Warps: \",color:dark_gray,extra:[
+		{
+			text:\"\n Spawn \",color:aqua, 
+			clickEvent:{
+				action:run_command,
+				value:\"/tp @p -60 72 181 90 ~\"
+			}
+		},
+		{
+			text:\"\n Storage \",color:gold,
+			clickEvent:{
+				action:run_command,
+				value:\"/tp @p -73 76 194 90 ~\"
+			}
+		},
+		{
+			text:\"\n Slime Farm  \",color:green,
+			clickEvent:{
+				action:run_command,
+				value:\"/tp @p -72 11 167 0 ~\"
+			}
+		}
+	]}"
+]}
