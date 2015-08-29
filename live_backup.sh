@@ -1,19 +1,22 @@
 #!/bin/bash
 
-# Set variables
-DIRECTORY=/home/$(whoami)/.minecraftbackups/  # Directory to backup to
-VERSION=1.8.5  # Minecraft version number
-MEM=2046M  # Amount of memory for server to use
+# Load config
+if [ -f server.config ]; then
+	source server.config
+else
+	echo "Missing 'server.config'."
+	exit 1
+fi
 
 # Check that backup location exists
-if [ ! -d "$DIRECTORY" ]; then
-	mkdir $DIRECTORY
+if [ ! -d "$BACKUP_DIR" ]; then
+	mkdir $BACKUP_DIR
 fi
 
 # Define function to send commands to server running in screen
 to_screen()
 {
-	screen -S minecraft -p 0 -X stuff "$1^M"
+	screen -S $SCREENNAME -p 0 -X stuff "$1^M"
 }
 
 # Count down sequence with stop command issued at end
@@ -44,15 +47,16 @@ sleep 1s
 to_screen "say 1"
 sleep 1s
 to_screen "stop"
+sleep 3s
 
 # Backup .minecraft directory
-OF=/home/$(whoami)/.minecraftbackups/$(date +%F).tar.gz
+OF=$BACKUP_DIR$(date +%F).tar.gz
 
 echo "Backing up the .minecraft folder to $OF" 
 
-tar -czvf $OF -C /home/$(whoami)/.minecraft/ .
+tar -czvf $OF -C $DIRECTORY .
 
-if [ -a $OF ]; then
+if [ -f $OF ]; then
 	echo "Backup successful!"
 else
 	echo "Something went wrong."
