@@ -4,8 +4,8 @@ This is a small collection of scripts I use to manage a small vanilla minecraft 
 Learn more about server at: [myrkviðr.com](http://xn--myrkvir-1za.com)
 
 #### Requirements
-Linux (tested on [Ubuntu 14.04](http://releases.ubuntu.com/14.04/) and [Arch Linux](https://www.archlinux.org/))
-[screen](https://en.wikipedia.org/wiki/GNU_Screen)
+- Linux (tested on [Ubuntu 14.04](http://releases.ubuntu.com/14.04/) and [Arch Linux](https://www.archlinux.org/))
+- [screen](https://en.wikipedia.org/wiki/GNU_Screen)
 
 #### Config
 All configuration is handled by ```server.config```. There you can set the minecraft install directory, backup directory, version number, memory usage, and name of screen session.
