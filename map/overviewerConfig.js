@@ -1,6 +1,7 @@
 var overviewerConfig = {
     "worlds": [
-        "My world"
+        "survival", 
+        "survival - nether"
     ], 
     "tilesets": [
         {
@@ -10,19 +11,37 @@ var overviewerConfig = {
                 181
             ], 
             "isOverlay": false, 
-            "last_rendertime": 1434701181, 
-            "name": "Normal Render", 
+            "last_rendertime": 1442420058, 
+            "name": "Overworld", 
             "poititle": "Markers", 
             "north_direction": 0, 
             "minZoom": 0, 
             "bgcolor": "#1a1a1a", 
-            "zoomLevels": 6, 
+            "zoomLevels": 7, 
             "base": "", 
             "imgextension": "png", 
             "defaultZoom": 1, 
-            "world": "My world", 
-            "maxZoom": 6, 
-            "path": "normalrender", 
+            "world": "survival", 
+            "maxZoom": 7, 
+            "path": "Overworld", 
+            "showlocationmarker": true
+        }, 
+        {
+            "spawn": "false", 
+            "isOverlay": false, 
+            "last_rendertime": 1441571831, 
+            "name": "Nether", 
+            "poititle": "Markers", 
+            "north_direction": 0, 
+            "minZoom": 0, 
+            "bgcolor": "#1a1a1a", 
+            "zoomLevels": 7, 
+            "base": "", 
+            "imgextension": "png", 
+            "defaultZoom": 1, 
+            "world": "survival - nether", 
+            "maxZoom": 7, 
+            "path": "Nether", 
             "showlocationmarker": true
         }
     ], 
@@ -60,6 +79,6 @@ var overviewerConfig = {
             67, 
             94
         ], 
-        "cacheTag": "1434701287"
+        "cacheTag": "1442420463"
     }
 };
