@@ -11,7 +11,7 @@ var overviewerConfig = {
                 181
             ], 
             "isOverlay": false, 
-            "last_rendertime": 1442420058, 
+            "last_rendertime": 1485835329, 
             "name": "Overworld", 
             "poititle": "Markers", 
             "north_direction": 0, 
@@ -29,7 +29,7 @@ var overviewerConfig = {
         {
             "spawn": "false", 
             "isOverlay": false, 
-            "last_rendertime": 1441571831, 
+            "last_rendertime": 1448730889, 
             "name": "Nether", 
             "poititle": "Markers", 
             "north_direction": 0, 
@@ -79,6 +79,6 @@ var overviewerConfig = {
             67, 
             94
         ], 
-        "cacheTag": "1442420463"
+        "cacheTag": "1485837721"
     }
 };
