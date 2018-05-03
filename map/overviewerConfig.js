@@ -11,7 +11,7 @@ var overviewerConfig = {
                 181
             ], 
             "isOverlay": false, 
-            "last_rendertime": 1525208094, 
+            "last_rendertime": 1525381666, 
             "name": "Overworld", 
             "poititle": "Markers", 
             "north_direction": 0, 
@@ -24,6 +24,28 @@ var overviewerConfig = {
             "world": "survival", 
             "maxZoom": 7, 
             "path": "Overworld", 
+            "showlocationmarker": true
+        }, 
+        {
+            "spawn": [
+                -60, 
+                80, 
+                181
+            ], 
+            "isOverlay": false, 
+            "last_rendertime": 1525381666, 
+            "name": "Overworld Night", 
+            "poititle": "Markers", 
+            "north_direction": 0, 
+            "minZoom": 0, 
+            "bgcolor": "#1a1a1a", 
+            "zoomLevels": 7, 
+            "base": "", 
+            "imgextension": "png", 
+            "defaultZoom": 1, 
+            "world": "survival", 
+            "maxZoom": 7, 
+            "path": "overworldnight", 
             "showlocationmarker": true
         }, 
         {
@@ -79,6 +101,6 @@ var overviewerConfig = {
             67, 
             94
         ], 
-        "cacheTag": "1525209447"
+        "cacheTag": "1525382669"
     }
 };
